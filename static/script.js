@@ -26,7 +26,7 @@ uploadButton.addEventListener("click", async () => {
             uploadButton.disabled = true;
             uploadButton.textContent = "Sharing...";
 
-            const response = await fetch("http://127.0.0.1:5000/upload", {
+            const response = await fetch("https://flask-file-sharing-website.onrender.com/upload", {
                 method: "POST",
                 body: formData,
             });
